@@ -1,2 +1,4 @@
 test.txt
 Newtest.txt
+__pycache__/
+*.pyc
