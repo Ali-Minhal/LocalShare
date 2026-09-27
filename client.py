@@ -49,7 +49,11 @@ with open(filename, "rb") as file:
 
         client_socket.sendall(chunk)
         sent += len(chunk)
+        
+
+        
 
 ack = (recv_exactly(client_socket, 4))
 if ack == b"ACK!":
     print("File sent successfully and acknowledged by the server.")
+client_socket.close()
